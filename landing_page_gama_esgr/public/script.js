@@ -14,7 +14,7 @@ $(document).ready(function() {
             type: "PUT",
             cache: false,
             data:json,                      
-            url: 'http://localhost:3001/leed',
+            url: 'http://23.239.7.5:3000/leed',
             success: function(data) 
             {				
                 alert("Cadastro Efetuado");
