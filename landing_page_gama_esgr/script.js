@@ -11,10 +11,10 @@ $(document).ready(function() {
         console.log(JSON.stringify(json));
         
         $.ajax({
-            type: "POST",
+            type: "PUT",
             cache: false,
             data:json,                      
-            url: 'http://23.239.7.5:3000/leed',
+            url: 'http://localhost:3000/leed',
             success: function(data) 
             {				
                 alert("Cadastro Efetuado");
