@@ -20,7 +20,7 @@
 <!-- Custom Fonts -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+ <script type="text/javascript" src="./js/return_form_data.js" />
 
 </head>
 
@@ -158,10 +158,12 @@
         </div>
         <div class="col-lg-6">
           <section id="contact">
-            <form name="htmlform" method="post" action="toyousender.php">
+            <form name="htmlform" id="dataForm" onsubmit="sendData(this)">
                 <div class="form-group">
+                  <label for="exampleInputEmail1">Nome: </label>
+                  <input type="text" name="nome" class="form-control user-email" id="customer_name" placeholder="Nome">
                   <label for="exampleInputEmail1">Email: </label>
-                  <input type="email" class="form-control user-email" id="exampleInputEmail1" placeholder="Email">
+                  <input type="email" name="email" class="form-control user-email" id="customer_email" placeholder="Email">
                 </div>
               <button type="submit" class="btn btn-success">ENVIAR</button>
             </form>
