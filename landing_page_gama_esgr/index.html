@@ -19,8 +19,7 @@
 
 <!-- Custom Fonts -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
- <script type="text/javascript" src="./js/return_form_data.js" />
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">  
 
 </head>
 
@@ -158,11 +157,10 @@
         </div>
         <div class="col-lg-6">
           <section id="contact">
-            <form name="htmlform" id="dataForm" onsubmit="sendData(this)">
+            <form name="htmlform" id="dataForm">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Nome: </label>
-                  <input type="text" name="nome" class="form-control user-email" id="customer_name" placeholder="Nome">
-                  <label for="exampleInputEmail1">Email: </label>
+                  <label for="exampleInputEmail1">Insira seus dados</label>
+                  <input type="text" name="nome_completo" class="form-control user-email" id="customer_name" placeholder="Nome completo"><br>                  
                   <input type="email" name="email" class="form-control user-email" id="customer_email" placeholder="Email">
                 </div>
               <button type="submit" class="btn btn-success">ENVIAR</button>
@@ -206,10 +204,10 @@
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
-
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-
+<!-- <script type="text/javascript" src="js/return_form_data.js" />  -->
+<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
