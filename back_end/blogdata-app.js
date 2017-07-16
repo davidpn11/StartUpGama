@@ -5,12 +5,10 @@ var MongoClient = mongodb.MongoClient,
 var myParser = require("body-parser");
 var app = express();
 
-//app.use(myParser.urlencoded({extended : true}));
 app.use(myParser.json());
 
 
 MongoClient.connect('mongodb://localhost:27017/blog-data', function(err, db) {
-
 
     assert.equal(err, null);
     console.log("Successfully connected to MongoDB.");
@@ -22,7 +20,6 @@ MongoClient.connect('mongodb://localhost:27017/blog-data', function(err, db) {
       
        var json = request.body;
        console.log(JSON.stringify(json));        
-       // delete json._id;
 
        if(json.nome_completo || json.email){
             db.collection("leeds").insertOne(json, function(err, res) {
@@ -41,14 +38,12 @@ MongoClient.connect('mongodb://localhost:27017/blog-data', function(err, db) {
 
     });
 
-    //get all todos
     app.get("/leeds",function(req,res){
 
         db.collection('leeds').find().toArray(function(err, docs) {
 
-            assert.equal(err, null);
-            assert.notEqual(docs.length, 0);                        
-	         console.log("GET REQUEST");                              
+             assert.equal(err, null);
+	     console.log("GET REQUEST");                              
              res.send(docs);            
         });
     });
