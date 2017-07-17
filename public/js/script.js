@@ -33,9 +33,12 @@ $(document).ready(function() {
     });
 
     function getIP(){      
-        $.get("https://freegeoip.net/json/", function(data, status){
-            client_ip = data.ip;
-        });  
+        // $.get("https://freegeoip.net/json/", function(data, status){
+        //     client_ip = data.ip;
+        // }); 
+        $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
+            client_ip = data.geoplugin_request;
+        }); 
     }
 
     function parseJsonArray(formArray) {
