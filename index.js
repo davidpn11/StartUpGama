@@ -28,7 +28,7 @@ function subscribeLeed(json){
 }
 
 app.get('/', function(request, response) {  
-    response.render('index');    
+    response.render('land');    
 });
 
 app.put('/subscribe', function(request, response) {    
