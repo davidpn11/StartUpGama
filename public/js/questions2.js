@@ -72,24 +72,7 @@ var questions = [
 			"stack": "hyper"
 		}
 		},{
-		"question": "Você tem um trabalho em equipe que consiste na criação de um site. Supondo você estar participando do projeto, com qual opção você mais se identifica?",
-		"option1": {
-			"resposta": "Criação de conteúdo ",
-			"stack": "hacker"
-		},
-		"option2": {
-			"resposta":"Design do conteúdo",
-			"stack": "Hipster"
-		},
-		"option3": {
-			"resposta":"Venda e divulgação do conteúdo ",
-			"stack": "hustler"
-		},
-		"option4": {
-			"resposta": "Testando ferramentas de conversão e acesso ao conteúdo",
-			"stack": "hyper"
-		}
-		},{
+		{
 		"question": "Fim de semana chegou. O que você vai fazer?",
 		"option1": {
 			"resposta": "Vou jogar LoL com meus amigos!",
