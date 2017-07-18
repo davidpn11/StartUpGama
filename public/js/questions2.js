@@ -162,24 +162,6 @@ var questions = [
 			"stack": "hyper"
 		}
 		},{
-		"question": "Quem é você na empresa? ",
-		"option1": {
-			"resposta": "O que fica enfurnado no computador durante todo o expediente",
-			"stack": "hacker"
-		},
-		"option2": {
-			"resposta":"O que sempre reclama da má diagramação dos relatórios e sempre arruma um jeito de organizar todo o escritório.",
-			"stack": "hipster"
-		},
-		"option3": {
-			"resposta":"O que vende até areia pro deserto se precisar",
-			"stack": "hustler"
-		},
-		"option4": {
-			"resposta": "O boa-praça que faz amizade até com o segurança do prédio",
-			"stack": "hyper"
-		}
-		},{
 		"question": "Na escola, você era...   ",
 		"option1": {
 			"resposta": "Aquele que tirava as maiores notas da sala, mas que era zoado por todo mundo",
