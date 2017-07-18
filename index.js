@@ -35,6 +35,10 @@ app.get('/quiz', function(request, response) {
     response.render('quiz');    
 });
 
+app.get('/quiz-perfil', function(request, response) {  
+    response.render('quiz2');    
+});
+
 app.put('/subscribe', function(request, response) {    
   try {
      json = request.body;      

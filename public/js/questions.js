@@ -12,7 +12,7 @@ var questions = [
 	{
 		"question": " - O que você acha de processos?",
 		"option1": "Gosto de seguir processos e padrões auditados.",
-		"option2": "Gosto de ser cobrado apenas pelo resultado e não pelo processo",
+		"option2": "Gosto de ser cobrado apenas pelo resultado enão pelo processo",
 		"option3": "Gosto de criar e modificar processos fazendo um benchmarking constante.",
 		"option4": "Gosto de seguir processos estabelecidos, mas que não sejam muito rigorosos",
 		"answer": "3"
