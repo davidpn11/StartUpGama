@@ -3,6 +3,12 @@ $(document).ready(function() {
     var client_ip = -1; 
     getIP();
 
+    function redirectPage() {                    
+        if (confirm("Você quer ir para o site da Gama?") == true) {
+            window.location.href = "http://gama.academy/"
+        }
+    }
+
     $('#dataForm').submit(function () {
         var formData = $("#dataForm").serializeArray();        
         var json = parseJsonArray(formData); 
@@ -23,7 +29,7 @@ $(document).ready(function() {
             url: '/subscribe',
             success: function(data) 
             {				
-                alert("Cadastro Efetuado");
+                redirectPage();
             },
             error: function (data) {
                 alert('Algo deu errado!');            
