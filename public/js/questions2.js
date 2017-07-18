@@ -25,7 +25,7 @@ var questions = [
 		},
 		"option2": {
 			"resposta": "Apenas um grupo seleto de bons apreciadores da minha arte",
-			"stack": "Hipster"
+			"stack": "hipster"
 		},
 		"option3": {
 			"resposta": "Todos os seus amigos antigos do colégio, a galera do trabalho, do barzinho e a torcida do Flamengo.",
@@ -61,7 +61,7 @@ var questions = [
 		},
 		"option2": {
 			"resposta": "Tumblr, para expressar os sentimentos através de minha arte.",
-			"stack": "Hipster"
+			"stack": "hipster"
 		},
 		"option3": {
 			"resposta": "LinkedIn, quero muitos contatos .",
@@ -72,25 +72,6 @@ var questions = [
 			"stack": "hyper"
 		}
 		},{
-		{
-		"question": "Fim de semana chegou. O que você vai fazer?",
-		"option1": {
-			"resposta": "Vou jogar LoL com meus amigos!",
-			"stack": "hacker"
-		},
-		"option2": {
-			"resposta":"Vou ao cinema assistir ao novo filme do Almodóvar",
-			"stack": "Hipster"
-		},
-		"option3": {
-			"resposta":"Marquei com a galera ir naquele barzinho!",
-			"stack": "hustler"
-		},
-		"option4": {
-			"resposta": " Já tô na balada desde sexta!",
-			"stack": "hyper"
-		}
-		},{
 		"question": "Você tem um trabalho em equipe que consiste na criação de um site. Supondo você estar participando do projeto, com qual opção você mais se identifica?",
 		"option1": {
 			"resposta": "Criação de conteúdo ",
@@ -98,7 +79,7 @@ var questions = [
 		},
 		"option2": {
 			"resposta":"Design do conteúdo",
-			"stack": "Hipster"
+			"stack": "hipster"
 		},
 		"option3": {
 			"resposta":"Venda e divulgação do conteúdo ",
@@ -109,6 +90,42 @@ var questions = [
 			"stack": "hyper"
 		}
 		},{
+		"question": "Fim de semana chegou. O que você vai fazer?",
+		"option1": {
+			"resposta": "Vou jogar LoL com meus amigos!",
+			"stack": "hacker"
+		},
+		"option2": {
+			"resposta":"Vou ao cinema assistir ao novo filme do Almodóvar",
+			"stack": "hipster"
+		},
+		"option3": {
+			"resposta":"Marquei com a galera ir naquele barzinho!",
+			"stack": "hustler"
+		},
+		"option4": {
+			"resposta": " Já tô na balada desde sexta!",
+			"stack": "hyper"
+		}
+		},{
+		"question": "7)Você tem um trabalho atrasado e seu chefe já está no seu pé! E agora?",
+		"option1": {
+			"resposta": "Enche sua xícara de café, coloca seu fone de ouvido e não levanta até acabar o trabalho ",
+			"stack": "hacker"
+		},
+		"option2": {
+			"resposta":"Pede ajuda aos seus amigos para adiantar o trabalho",
+			"stack": "hipster"
+		},
+		"option3": {
+			"resposta":"Tenta conversar com o chefe para te dar um prazo maior",
+			"stack": "hustler"
+		},
+		"option4": {
+			"resposta": "Faz uma apresentação do porquê é necessário estender o prazo de entrega",
+			"stack": "hyper"
+		}
+		},{
 		"question": "Quem é você na empresa? ",
 		"option1": {
 			"resposta": "O que fica enfurnado no computador durante todo o expediente",
@@ -116,7 +133,7 @@ var questions = [
 		},
 		"option2": {
 			"resposta":"O que sempre reclama da má diagramação dos relatórios e sempre arruma um jeito de organizar todo o escritório.",
-			"stack": "Hipster"
+			"stack": "hipster"
 		},
 		"option3": {
 			"resposta":"O que vende até areia pro deserto se precisar",
@@ -134,7 +151,7 @@ var questions = [
 		},
 		"option2": {
 			"resposta":"O que tenta levar todo mundo naquela baladinha alternativa ou para o bar de cerveja artesanal",
-			"stack": "Hipster"
+			"stack": "hipster"
 		},
 		"option3": {
 			"resposta":"O que convence a todos do melhor rolê",
@@ -152,7 +169,7 @@ var questions = [
 		},
 		"option2": {
 			"resposta":"O que sempre reclama da má diagramação dos relatórios e sempre arruma um jeito de organizar todo o escritório.",
-			"stack": "Hipster"
+			"stack": "hipster"
 		},
 		"option3": {
 			"resposta":"O que vende até areia pro deserto se precisar",
@@ -170,7 +187,7 @@ var questions = [
 		},
 		"option2": {
 			"resposta":"Aquele que adorava as aulas de arte e literatura",
-			"stack": "Hipster"
+			"stack": "hipster"
 		},
 		"option3": {
 			"resposta":"Aquele da turma do fundão, que aprontava com todo mundo.",
