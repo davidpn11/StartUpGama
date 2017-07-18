@@ -31,6 +31,10 @@ app.get('/', function(request, response) {
     response.render('land');    
 });
 
+app.get('/quiz', function(request, response) {  
+    response.render('quiz');    
+});
+
 app.put('/subscribe', function(request, response) {    
   try {
      json = request.body;      
