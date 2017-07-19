@@ -108,7 +108,7 @@ var questions = [
 			"stack": "hyper"
 		}
 		},{
-		"question": "7)Você tem um trabalho atrasado e seu chefe já está no seu pé! E agora?",
+		"question": "Você tem um trabalho atrasado e seu chefe já está no seu pé! E agora?",
 		"option1": {
 			"resposta": "Enche sua xícara de café, coloca seu fone de ouvido e não levanta até acabar o trabalho ",
 			"stack": "hacker"
