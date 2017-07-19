@@ -36,13 +36,13 @@ var questions = [
 			"stack": "hyper"
 		}
 		},{
-		"question": "Qual tipo o seu tipo preferido de canal do YouTube?",
+		"question": "Qual seu canal do YouTube favorito?",
 		"option1": {
-			"resposta": "Gameplays e canais sobre tecnologia",
+			"resposta": "Algum de gameplays e canais sobre tecnologia",
 			"stack": "hacker"
 		},
 		"option2": {
-			"resposta": "Empreendedorismo e investimentos na bolsa de valores",
+			"resposta": "Qualquer um que fale sobre empreendedorismo e investimentos na bolsa de valores",
 			"stack": "Hustler"
 		},
 		"option3": {
@@ -50,7 +50,7 @@ var questions = [
 			"stack": "hyper"
 		},
 		"option4": {
-			"resposta": "Artes, design DIY e canais de bandas alternativas",
+			"resposta": "Gosto de artes, design DIY e canais de bandas alternativas",
 			"stack": "hipster"
 		}
 		},{
