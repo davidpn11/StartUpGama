@@ -1,6 +1,0 @@
-{
-  "name": "Gama-Blog",
-  "description": "Gama-Blog",  
-  "keywords": ["gama", "express", "heroku"],
-  "image": "heroku/nodejs"
-}
