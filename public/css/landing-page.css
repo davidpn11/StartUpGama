@@ -137,6 +137,17 @@ h6 {
     height: 40px;
 }
 
+.submit-btn-land{
+    background-color: #673ab7;
+    border-color: #673ab7;
+}
+
+.submit-btn-land:hover{
+     -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
 
 .banner h2 {
     margin: 0;

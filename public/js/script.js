@@ -29,7 +29,7 @@ $(document).ready(function() {
             url: '/subscribe',
             success: function(data) 
             {				
-                redirectPage();
+                alert("Obrigado por se cadastrar!");
             },
             error: function (data) {
                 alert('Algo deu errado!');            
