@@ -38,6 +38,96 @@ $(document).ready(function() {
      return false;
     });
 
+     $('#curriculoForm').submit(function () {
+        var formData = $("#curriculoForm").serializeArray();        
+        var json = parseJsonArray(formData); 
+        json.ip = client_ip;
+        json.data = new Date();
+       // console.log(JSON.stringify(json));
+        
+        $.ajax({
+            type: "PUT",
+            contentType : "application/json",
+            datatype : "application/json",
+            xhrFields: {
+                withCredentials: false
+            },  
+            headers: {
+            },             
+            data:JSON.stringify(json),                      
+            url: '/subscribe',
+            success: function(data) 
+            {	
+                $(".mfp-close").trigger( "click" );			
+                downloadPage('curriculo');                
+            },
+            error: function (data) {
+                $(".mfp-close").trigger( "click" );
+                alert('Algo deu errado!');            
+            }  
+        });	                 
+    });
+
+  $('#ebookForm').submit(function () {
+        var formData = $("#ebookForm").serializeArray();     
+        console.log(formData);   
+        var json = parseJsonArray(formData); 
+        json.ip = client_ip;
+        json.data = new Date();
+        console.log(JSON.stringify(json));        
+        $.ajax({
+            type: "PUT",
+            contentType : "application/json",
+            datatype : "application/json",
+            xhrFields: {
+                withCredentials: false
+            },  
+            headers: {
+            },             
+            data:JSON.stringify(json),                      
+            url: '/subscribe',
+            success: function(data) 
+            {	
+                $(".mfp-close").trigger( "click" ); 			
+               downloadPage('ebook');                              
+            },
+            error: function (data) {
+                 $(".mfp-close").trigger( "click" );
+                alert('Algo deu errado!');            
+            }  
+        });	            
+    });
+
+    $('#entrevistaForm').submit(function () {
+        var formData = $("#entrevistaForm").serializeArray();     
+        console.log(formData);   
+        var json = parseJsonArray(formData); 
+        json.ip = client_ip;
+        json.data = new Date();
+        console.log(JSON.stringify(json));        
+        $.ajax({
+            type: "PUT",
+            contentType : "application/json",
+            datatype : "application/json",
+            xhrFields: {
+                withCredentials: false
+            },  
+            headers: {
+            },             
+            data:JSON.stringify(json),                      
+            url: '/subscribe',
+            success: function(data) 
+            {	
+                $(".mfp-close").trigger( "click" );
+                downloadPage('entrevista');                                
+            },
+            error: function (data) {
+                $(".mfp-close").trigger( "click" );
+                alert('Algo deu errado!');            
+            }  
+        });	                 
+    });
+
     function getIP(){      
         // $.get("https://freegeoip.net/json/", function(data, status){
         //     client_ip = data.ip;
@@ -53,6 +143,22 @@ $(document).ready(function() {
             jsonArray[formArray[i]['name']] = formArray[i]['value'];
         }
         return jsonArray;
+    }
+
+     function downloadPage(material){
+        switch(material){
+            case "curriculo":
+                window.location.href = "/download/1"
+                break;
+            case "ebook":
+                window.location.href = "/download/2"
+                break;
+            case "entrevista":
+                window.location.href = "/download/3"
+                break;
+            default:
+                break;
+        }
     }
 
 });
