@@ -223,8 +223,7 @@ p {
     padding: 2px 16px;
 }
 
-.material-banner{
-    width: 300px;
+.material-banner{    
 }
 
 .thumbnail:hover{
@@ -241,4 +240,10 @@ p {
   			width:auto;
 		    max-width: 500px;
  			margin: 20px auto;
-		}
+}
+
+
+.caption > p {
+    font-size: 25px;
+    font-style: bold;
+}
