@@ -76,8 +76,7 @@ app.put('/subscribe', function(request, response) {
   try {
      json = request.body;  
      console.log(json); 
-      //response.send(subscribeLeed(json));      
-        response.send({"status":"sucess"}); 
+      response.send(subscribeLeed(json));            
   }catch(e){
      console.log(e);
      response.send({"status":"error"}); 
