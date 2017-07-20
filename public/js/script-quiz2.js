@@ -15,8 +15,7 @@ var op4 = document.getElementById('op4');
 var answer_stack = ["","","",""];
 
 function loadQuestion(questionIndex){
-	var q = questions[questionIndex];
-	console.log(q);
+	var q = questions[questionIndex];	
 	questtionE1.textContent = (questionIndex + 1) + '. ' + q.question;
 	op1.textContent = q.option1.resposta;
 	 $(".btn-block").removeClass("active");
@@ -106,5 +105,34 @@ function beginQuiz(){
 	$("#quiz-intro").hide();
 	$("#quizContainer").show();
 }
+
+  $('#dataForm').submit(function () {
+        var formData = $("#dataForm").serializeArray();        
+        var json = parseJsonArray(formData); 
+        json.ip = client_ip;
+        json.data = new Date();
+       // console.log(JSON.stringify(json));
+        
+        $.ajax({
+            type: "PUT",
+            contentType : "application/json",
+            datatype : "application/json",
+            xhrFields: {
+                withCredentials: false
+            },  
+            headers: {
+            },             
+            data:JSON.stringify(json),                      
+            url: '/subscribe',
+            success: function(data) 
+            {				
+                alert("Obrigado por se cadastrar!");
+            },
+            error: function (data) {
+                alert('Algo deu errado!');            
+            }  
+        });	            
+     return false;
+    });
 
 loadQuestion(currentQuestion);

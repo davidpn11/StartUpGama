@@ -52,17 +52,31 @@ app.get('/sobre', function(request, response) {
 });
 
 
+app.get('/download/:materialId', function(request, response) {  
 
-app.get('/curriculo', function(request, response) {
-    var filePath = path.join(__dirname,"file/CV.docx");
-    console.log();
-    if(fs.existsSync(filePath)){
+    var materialId = parseInt(request.params.materialId);    
+    var filePath;
+
+    switch(materialId){ 
+        case 1:           
+            filePath = path.join(__dirname,"file/CVModelo.docx");
+            break;
+        case 2:            
+            filePath = path.join(__dirname,"file/Ebook_5dicasCV.pdf");
+            break;
+        case 3:        
+            filePath = path.join(__dirname,"file/10PerguntasInusitadas.pptx");
+            break;
+        default:
+           break;
+    }        
+    if(fs.existsSync(filePath)){        
         var filename = path.basename(filePath);
         var mimetype = mime.lookup(filePath);
 
         response.setHeader('Content-disposition', 'attachment; filename=' + filename);
         response.setHeader('Content-type', mimetype);
-
+        
         var filestream = fs.createReadStream(filePath);
         filestream.pipe(response);
     }

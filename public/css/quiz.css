@@ -208,6 +208,7 @@ label .glyphicon {
   background: #673ab7;
   boder-color: #673ab7;
   color: #fff;
+  font-size: 20px;
   box-shadow: 0 3px 2px rgba(0,0,0,0.4);
 }
 
@@ -222,6 +223,7 @@ label .glyphicon {
 
 
 #stack-text{
+	text-shadow: 0 3px 2px rgba(0,0,0,0.4);
 	width: 600px;
 	padding: 0px;			
 }
@@ -234,4 +236,18 @@ label .glyphicon {
 #stack-img{
 	height: 140px;
 	width: 140px;
+}
+
+.white-popup {
+  			position: relative;
+  			background: #FFF;
+  			padding: 20px;
+  			width:auto;
+		    max-width: 500px;
+ 			margin: 20px auto;
+}
+
+.submit-btn-land{
+    background-color: #673ab7;
+    border-color: #673ab7;
 }
