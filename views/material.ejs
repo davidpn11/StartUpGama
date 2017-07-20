@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Go Gama</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="/css/landing-page.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">  
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+</head>
+
+<body>
+
+<a name="about"></a>
+
+<div class="intro-header">
+<div class="container">
+
+    <div class="row ">        
+  <div class="col-md-4 material-banner">
+    <div class="thumbnail">
+        <img src="../img/Business.jpg" alt="Lights" style="width:100%">
+        <div class="caption" align="center">
+          <h2>teste teste<h2>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4 material-banner">
+    <div class="thumbnail">
+        <img src="../img/Business.jpg" alt="Lights" style="width:100%">
+        <div class="caption" align="center">
+          <h2>teste teste<h2>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4 material-banner">
+      <a href="#event_popup" class="btn open-popup-link">>
+      <div class="thumbnail">
+        <img src="../img/Business.jpg" alt="Lights" style="width:100%">
+        <div class="caption" align="center">
+          <h2>teste teste<h2>
+        </div>
+    </div>
+    </a>
+  </div>
+</div>
+</div>
+
+
+<div id="event_popup" class="white-popup mfp-hide">  
+     <form name="htmlform" id="dataForm">
+                <div class="form-group" align='center'>                  
+                  <input type="text" required name="nome_completo" class="form-control user-email" id="customer_name" placeholder="Nome Completo"><br>                  
+                  <input type="email" required name="email" class="form-control user-email" id="customer_email" placeholder="Email">
+                </div>
+              <button type="submit" class="btn submit-btn">ENVIAR</button>
+            </form>     
+</div>
+
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="js/return_form_data.js" />  -->
+<script type="text/javascript" src="/js/script.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script>
+	
+    $('.open-popup-link').magnificPopup({
+  		type:'inline',
+  		midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+	});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102832213-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

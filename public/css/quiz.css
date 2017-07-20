@@ -1,5 +1,5 @@
 body{
-	background: url(../img/gama.jpg);
+	background: url(../img/Identidade.png);
 }
 
 #descricao{
@@ -56,7 +56,7 @@ style="top:40%;"
 	 margin: 0 auto;  
 }
 
-.option{
+.option{	
 	width: 470px;
 	display: inline-block;;
 	padding: 10px 0 10px 15px;
@@ -64,9 +64,11 @@ style="top:40%;"
 	background: #fff;
 	margin: 10px 0 10px 10px;
 	color: #fff;
-	background: #659157;
+	background: #0092df;
 	border-radius: 20px;
+	
 	font-family: 'Muli', sans-serif;
+	box-shadow: 0 3px 2px rgba(0,0,0,0.4);
 }
 
 
@@ -86,7 +88,8 @@ style="top:40%;"
 	height: 50px;
 	/* //left: 40%; */
 	border-radius: 5px;
-	 margin: 0 auto;  	
+	 margin: 0 auto;  
+	  box-shadow: 0 3px 2px rgba(0,0,0,0.4);	
 }
 
 .btn-lg{
@@ -205,6 +208,7 @@ label .glyphicon {
   background: #673ab7;
   boder-color: #673ab7;
   color: #fff;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.4);
 }
 
 .btn-xl:hover {
@@ -213,6 +217,7 @@ label .glyphicon {
     -moz-transform: scale(1.1)!important;
 	-o-transform: scale(1.1)!important;
 	color: #fff !important;
+	
 }
 
 

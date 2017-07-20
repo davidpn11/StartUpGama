@@ -41,7 +41,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/gama.jpg) no-repeat center center;
+    background: url(../img/Identidade.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -222,3 +222,23 @@ p {
 .container {
     padding: 2px 16px;
 }
+
+.material-banner{
+    width: 300px;
+}
+
+.thumbnail:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.white-popup {
+  			position: relative;
+  			background: #FFF;
+  			padding: 20px;
+  			width:auto;
+		    max-width: 500px;
+ 			margin: 20px auto;
+		}
