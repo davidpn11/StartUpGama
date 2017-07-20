@@ -44,28 +44,23 @@ app.get('/quiz-perfil', function(request, response) {
 
 app.get('/download/:materialId', function(request, response) {  
 
-    var materialId = parseInt(request.params.materialId);
-    console.log("ID: "+materialId);
+    var materialId = parseInt(request.params.materialId);    
     var filePath;
 
     switch(materialId){ 
-        case 1:
-            console.log("curriculo");
+        case 1:           
             filePath = path.join(__dirname,"file/CVModelo.docx");
             break;
-        case 2:
-            console.log("ebook");
+        case 2:            
             filePath = path.join(__dirname,"file/Ebook_5dicasCV.pdf");
             break;
-        case 3:
-        console.log("entrevista");
+        case 3:        
             filePath = path.join(__dirname,"file/10PerguntasInusitadas.pptx");
             break;
         default:
            break;
     }        
-    if(fs.existsSync(filePath)){
-        console.log("existe");
+    if(fs.existsSync(filePath)){        
         var filename = path.basename(filePath);
         var mimetype = mime.lookup(filePath);
 

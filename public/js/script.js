@@ -28,15 +28,15 @@ $(document).ready(function() {
             data:JSON.stringify(json),                      
             url: '/subscribe',
             success: function(data) 
-            {				
-                downloadPage('curriculo');
-                alert("Download Iniciado!");
+            {	
+                $(".mfp-close").trigger( "click" );			
+                downloadPage('curriculo');                
             },
             error: function (data) {
+                $(".mfp-close").trigger( "click" );
                 alert('Algo deu errado!');            
             }  
-        });	            
-     return false;
+        });	                 
     });
 
   $('#ebookForm').submit(function () {
@@ -58,15 +58,15 @@ $(document).ready(function() {
             data:JSON.stringify(json),                      
             url: '/subscribe',
             success: function(data) 
-            {				
-               downloadPage('ebook');
-               alert("Download Iniciado!");
+            {	
+                $(".mfp-close").trigger( "click" ); 			
+               downloadPage('ebook');                              
             },
             error: function (data) {
+                 $(".mfp-close").trigger( "click" );
                 alert('Algo deu errado!');            
             }  
         });	            
-     return false;
     });
 
     $('#entrevistaForm').submit(function () {
@@ -88,15 +88,15 @@ $(document).ready(function() {
             data:JSON.stringify(json),                      
             url: '/subscribe',
             success: function(data) 
-            {				
-                downloadPage('entrevista');
-                alert("Download Iniciado!");
+            {	
+                $(".mfp-close").trigger( "click" );
+                downloadPage('entrevista');                                
             },
             error: function (data) {
+                $(".mfp-close").trigger( "click" );
                 alert('Algo deu errado!');            
             }  
-        });	            
-     return false;
+        });	                 
     });
 
     
